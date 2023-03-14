@@ -30,12 +30,15 @@ double perimetri_2(double A,double B, double C){
 }
 int main() {
     tringle c;
+    
     cout<<"gverdi1=";cin>>c.gverdi1;
     cout<<"gverdi2=";cin>>c.gverdi2;
     cout<<"gverdi3=";cin>>c.gverdi3;
     cout<<"kutxe1=";cin>>c.kutxe1;    
     cout<<"kutxe2=";cin>>c.kutxe2; 
     cout<<"kutxe3=";cin>>c.kutxe3; 
+    if(c.gverdi1+c.gverdi2>c.gverdi3 && c.kutxe1+c.kutxe2+c.kutxe3<180 ){
+	
     cout<<"sami gverdit migebuli samkutxedis fartobia="<<fartobi_1(c.gverdi1, c.gverdi2, c.gverdi3)<<endl;
      cout<<"ori gverdita da 1kutxit migebuli samkutxedis fartobia="<<fartobi_2(c.gverdi1, c.gverdi2, c.kutxe1)<<endl;
     //imistvis rom shevamowmot emtxveva tu ara pasuxebi chaweret ricxvebi zusti tanmimdevrobit. 
@@ -48,5 +51,7 @@ int main() {
 	//es aris zusti kutxeebi im shemtxvevashi tu samkutxedis gverdebia 3,4,5 :)
 	cout<<"sami gverdit migebuli samkutxedis perimetria="<<perimetri_1(c.gverdi1, c.gverdi2, c.gverdi3)<<endl;
 	cout<<"sami gverdita da 1kutxit  migebuli samkutxedis perimetria="<<perimetri_2(c.gverdi1, c.gverdi2, c.gverdi3)<<endl;
+}else 
+cout<<"araswori parametrebi";
     return 0;
 }
